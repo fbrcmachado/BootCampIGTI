@@ -37,10 +37,10 @@ df_enem = df_enem.loc[
 df_enem.to_csv('C:/Users/antonio.machado/Desktop/Enem/DADOS/DF_MG_2019.csv', sep=';', index=False, encoding='latin-1')
 
 ##IMPORTANDO DADOS PARA O MYSQL
-database_username = 'fbrcmachado'
-database_password = 'fbrc2503'
+database_username = 'root'
+database_password = 'xxxxxxx'
 database_ip       = 'localhost'
-database_name     = 'dbbi'
+database_name     = 'database_name'
 
 engine = sqlalchemy.create_engine('mysql+mysqlconnector://{0}:{1}@{2}/{3}'.format(database_username,
                                                                                   database_password,
