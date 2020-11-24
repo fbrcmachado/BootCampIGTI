@@ -49,5 +49,5 @@ engine = sqlalchemy.create_engine('mysql+mysqlconnector://{0}:{1}@{2}/{3}'.forma
     
 
 ##INSERE DATAFRAME NO MYSQL
-df_enem.to_sql(name = 'enem_mg_2019', con = engine, index = False, chunksize=1000, if_exists = 'append')
+df_enem.to_sql(name = 'tbEnem_MG_2019', con = engine, index = False, chunksize=1000, if_exists = 'append')
 
